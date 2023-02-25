@@ -58,6 +58,7 @@ const deleteContact = (req, res) => {
 
   if (contact) {
     persons = persons.filter(contact => contact.id !== targetContactId)
+    res.json(persons)
     return res.status(200).end()
   } else {
     res.statusMessage = "Contact not found"
