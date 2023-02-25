@@ -3,7 +3,7 @@ const app = express()
 var morgan = require('morgan')
 const cors = require('cors')
 
-const personsApi = require('./phonebook')
+const personsApi = require('./service/phonebook')
 
 
 const unknownEndpoint = (request, response) => {
